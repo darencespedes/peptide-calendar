@@ -820,7 +820,8 @@
     let nextResourceId = 2;
     
     let editingId = null, nextId = 3, selectedDays = [], currentUser = 'all', selColor = COLORS[0];
-    let viewDate = new Date(2026, 5, 1);
+    let viewDate = new Date();
+    viewDate.setDate(1); // Set to 1st of current month
     
     function toggleSidebar() {
       const sidebar = document.querySelector('.sidebar');
